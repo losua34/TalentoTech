@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*body{
+    background-image: url(cerca-balon-futbol-centro-estadio-iluminado-faros_207634-2741.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ececec;
+}
+.logo {
+    max-width: 8rem;
+    width: 450px;
+    
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.abrir-menu{
+    display: none;
+
+}
+.cerrar-menu{
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border:0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .abrir-menu {
+        color:#1c1c1c;
+    }
+    .cerrar-menu {
+        color:#ececec
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color:#1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a {
+        color: #ececec;
+
+    }
+    
+}
+.caja-resultados{
+    background-image: url();   
+    background-repeat: no-repeat;
+}
+.titulo-fecha{
+    color: rgb(19, 16, 16);
+    text-align: center;
+    margin: 0;
+    padding: 30PX;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.caja-titulos{
+    padding-top: 30px;
+    padding-bottom:10px ;
+}
+.texto-fechas{
+    color: #e7ca65;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    width: 200px;
+    margin: auto;
+
+}
+.bandera{
+    width: 50px;
+    border-radius: 5px;
+}
+.content-resultados{
+    display: flex;
+    width: 50%;
+    justify-content: space-around; 
+    margin: auto;
+    align-items: center;
+    /*filter: opacity(0.5);*/
+    align-items: center;
+    /*background: linear-gradient(90deg, rgb(60 54 150) 0%, rgba(9,9,121.1) 47%, rgba(0,212,255,1) 100%);*/
+    border-radius: 5px;
+    margin-top: 26px;
+
+}
+.nombre{
+    color: rgb(5, 5, 5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding-top: 8px;
+    font-size: 30px;
+}
+.resultado{
+    color:#e7ca65;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin:0px;
+}
+.separacion{
+    color: #e7ca65;
+    font-size: 31px;
+    margin: 0px;
+}
+.proximo{
+    color: black;
+    font-size: 31px;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+}
+#ligacolombiana{
+    background-image: url(cerca-balon-futbol-centro-estadio-iluminado-faros_207634-2741.avif);
+    
+}
+/*Copa America*/
+.america{
+    background-image: url(copamaerica.jpg);
+}
