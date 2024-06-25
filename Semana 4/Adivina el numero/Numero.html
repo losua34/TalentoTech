@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="numero.css">
+    <script src="Nuemero.js"></script>
+    <title>Adivina el numero</title>
+</head>
+<body>
+        <div class="contenedor">
+        <div class="animacion_aparecer" id="principal">
+            <h2>¡Adivina el número!</h2>
+            <p>Un número entre el 1 al 50.</p>
+
+            <button class="btn_comenzar" id="btn_comenzar">Comenzar</button>
+
+           
+        </div>
+
+        <!-- Para el proceso de adivinar el numero -->
+
+        <div class="animacion_aparecer" id="adivina">
+                <h2>Introduzca un número</h2>
+                <p>Entre el 1 al 50</p>
+
+                <input type="text" id="input">
+                <button class="btn_comenzar" id="btn_procesar">Procesar</button><br>
+
+                <div class="animacion" id="mostrar_intentos">¡Vamos! <br> Tienes 5 intentos</div>
+        </div>
+
+        <!-- Para cuando se hayan acabado los intentos o ganado -->
+
+        <div class="animacion_aparecer" id="fin">
+            <h2 id="resultado"></h2>
+            <h3 id="mostrar_numero"></h3><br>
+
+            <button id="btn_reintentar">Volver a intentar</button>
+        </div>
+
+        <!-- Este boton tiene la propiedad -> display: fixed -->
+        <button class="none animacion_aparecer" id="btn_inicio">Volver al inicio</button>
+    </div>
+ 
+       
+</body>
+</html>
